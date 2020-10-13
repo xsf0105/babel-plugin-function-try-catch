@@ -1,6 +1,6 @@
 ## babel4catch
 
-一个自动给 function 函数加入 `try/catch` 的 `babel plugin`
+A babel plugin that automatically adds `try/catch` to function.(一个能为函数自动添加 `try/catch` 的 babel 插件)
 
 
 ### Install
