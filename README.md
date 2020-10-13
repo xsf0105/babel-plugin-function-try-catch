@@ -30,13 +30,13 @@ var fn = function () {
 ```
 
 ## How to config
-webpack 配置
-```
+webpack
+```diff
 rules: [{
   test: /\.js$/,
   exclude: /node_modules/,
   use: [
-    "babel4catch",
++    "babel4catch",
     "babel-loader",
   ]
 }]
