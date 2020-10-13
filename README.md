@@ -21,9 +21,14 @@ var fn = function () {
 
 
 ## How to config
-.babelrc
+webpack 配置
 ```
-{
-  "plugins": ["babel4catch"]
-}
+rules: [{
+  test: /\.js$/,
+  exclude: /node_modules/,
+  use: [
+    "babel-loader",
+    'babel4catch',
+  ]
+}]
 ```
