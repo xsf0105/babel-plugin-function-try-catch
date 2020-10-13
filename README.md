@@ -1,15 +1,25 @@
 ## babel4catch
+
 一个自动给 function 函数加入 try/catch 的 babel loader
 
-before:
+
+### Install
+
 ```
+yarn add react-loadable
+```
+
+### Example
+
+before:
+```js
 var fn = function(){
   console.log('hello world');
 }
 ```
 
 after:
-```
+```js
 var fn = function () {
   try {
     console.log(2);
@@ -19,7 +29,6 @@ var fn = function () {
 };
 ```
 
-
 ## How to config
 webpack 配置
 ```
@@ -27,8 +36,8 @@ rules: [{
   test: /\.js$/,
   exclude: /node_modules/,
   use: [
-    "babel-loader",
     "babel4catch",
+    "babel-loader",
   ]
 }]
 ```
