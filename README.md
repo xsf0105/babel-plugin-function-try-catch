@@ -28,7 +28,7 @@ rules: [{
   exclude: /node_modules/,
   use: [
     "babel-loader",
-    'babel4catch',
+    "babel4catch",
   ]
 }]
 ```
