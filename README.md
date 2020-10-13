@@ -7,6 +7,8 @@
 
 ```
 yarn add babel4catch
+or
+npm install babel4catch
 ```
 
 ### Example
