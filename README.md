@@ -6,7 +6,7 @@
 ### Install
 
 ```
-yarn add react-loadable
+yarn add babel4catch
 ```
 
 ### Example

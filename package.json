@@ -1,6 +1,6 @@
 {
   "name": "babel4catch",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "babel plugin for funtion to use try/catch",
   "main": "index.js",
   "scripts": {
