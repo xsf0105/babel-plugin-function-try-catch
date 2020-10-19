@@ -1,4 +1,4 @@
-## babel4catch
+## babel-plugin-function-try-catch
 
 A babel plugin that can automatically add `try/catch` to functions.
 ###### (一个能为函数自动添加 `try/catch` 的 babel 插件)
@@ -7,9 +7,9 @@ A babel plugin that can automatically add `try/catch` to functions.
 ### Install
 
 ```
-yarn add babel4catch
+yarn add babel-plugin-function-try-catch
 or
-npm install babel4catch
+npm install babel-plugin-function-try-catch
 ```
 
 ### Example
@@ -39,7 +39,7 @@ rules: [{
   test: /\.js$/,
   exclude: /node_modules/,
   use: [
-+    "babel4catch",
++    "babel-plugin-function-try-catch",
     "babel-loader",
   ]
 }]
