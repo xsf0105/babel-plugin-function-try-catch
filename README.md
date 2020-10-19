@@ -1,6 +1,6 @@
 ## babel-plugin-function-try-catch
 
-A babel plugin that can automatically add `try/catch` to functions.
+A babel plugin that can add `try/catch` to function automatically.
 ###### (一个能为函数自动添加 `try/catch` 的 babel 插件)
 
 

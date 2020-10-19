@@ -1,7 +1,7 @@
 {
-  "name": "babel4catch",
+  "name": "babel-plugin-function-try-catch",
   "version": "1.0.10",
-  "description": "babel plugin for funtion to use try/catch",
+  "description": "A babel plugin for funtion to use try/catch automatically",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
