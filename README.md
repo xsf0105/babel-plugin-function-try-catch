@@ -1,10 +1,11 @@
 ## babel-plugin-function-try-catch
 
-> A babel plugin that can add `try/catch` to function automatically.(一个能为函数自动添加 `try/catch` 的 babel 插件)
+> Babel plugin that can add `try/catch` to function automatically.(一个能为函数自动添加 `try/catch` 的 babel 插件)
 
 
-### Install
+### Usage
 
+Install:
 ```
 yarn add babel-plugin-function-try-catch
 or
@@ -32,7 +33,7 @@ var fn = function () {
 ```
 
 ## How to config
-webpack
+webpack:
 ```diff
 rules: [{
   test: /\.js$/,
