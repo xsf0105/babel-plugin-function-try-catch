@@ -1,20 +1,29 @@
 {
   "name": "babel-plugin-function-try-catch",
-  "version": "1.0.11",
-  "description": "A babel plugin for funtion to use try/catch automatically",
-  "main": "index.js",
+  "version": "0.0.0",
+  "description": "a babel plugin can add try/catch to function automatically.",
+  "repository": "allan2coder/babel-plugin-function-try-catch",
+  "author": "xsf <allan91coder@gmail.com>",
+  "main": "lib/index.js",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "mocha": "^2.2.5"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf lib",
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register",
+    "test:watch": "npm run test -- --watch",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
-    "babel-plugin",
+    "babel",
+    "plugin",
     "try",
-    "catch"
-  ],
-  "author": "xsf",
-  "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.11.6",
-    "@babel/parser": "^7.11.5"
-  }
+    "catch",
+    "function",
+    "babel-plugin"
+  ]
 }

@@ -1,46 +1,51 @@
-## babel-plugin-function-try-catch
+# babel-plugin-function-try-catch
 
-> Babel plugin that can add `try/catch` to function automatically.(一个能为函数自动添加 `try/catch` 的 babel 插件)
+a babel plugin can add try/catch to function automatically.
 
+## Example
 
-### Usage
+**In**
 
-Install:
-```
-yarn add babel-plugin-function-try-catch
-or
-npm install babel-plugin-function-try-catch
-```
-
-### Example
-
-before:
 ```js
-var fn = function(){
-  console.log('hello world');
+// input code
+```
+
+**Out**
+
+```js
+"use strict";
+
+// output code
+```
+
+## Installation
+
+```sh
+$ npm install babel-plugin-function-try-catch
+```
+
+## Usage
+
+### Via `.babelrc` (Recommended)
+
+**.babelrc**
+
+```json
+{
+  "plugins": ["function-try-catch"]
 }
 ```
 
-after:
-```js
-var fn = function () {
-  try {
-    console.log(2);
-  } catch (error) {
-    console.log(error);
-  }
-};
+### Via CLI
+
+```sh
+$ babel --plugins function-try-catch script.js
 ```
 
-## How to config
-webpack:
-```diff
-rules: [{
-  test: /\.js$/,
-  exclude: /node_modules/,
-  use: [
-+    "babel-plugin-function-try-catch",
-    "babel-loader",
-  ]
-}]
+### Via Node API
+
+```javascript
+require("babel-core").transform("code", {
+  plugins: ["function-try-catch"]
+});
 ```
