@@ -5,6 +5,10 @@ const template = require("@babel/template");
 const core = require("@babel/core");
 const LIMIT_LINE = 0;
 
+let source = `var fn = function() {
+  console.log(111)
+}`;
+
 module.exports = function(source) {
   // 1、解析
   let ast = parser.parse(source, {
@@ -22,10 +26,10 @@ module.exports = function(source) {
             isAsync = node.async;
 
         // =================================== 边界情况 return 处理 ============================
-        // 1、如果有try catch包裹了，则不需要
-        // 2、防止 circle loops 
-        // 3、需要 try catch 的只能是语句，像 () => 0 这种的 body，是不需要的
-        // 4、如果函数内容小于等于 LIMIT_LINE 行不去 try/catch，当然这个函数可以暴露出来给用户设置
+        // 1、如果有 try catch 包裹了
+        // 2、防止 circle loops
+        // 3、需要 try catch 的只能是语句，像 () => 0 这种的 body
+        // 4、如果函数内容小于多少行数
         if (blockStatement.body && t.isTryStatement(blockStatement.body[0])
           || !t.isBlockStatement(blockStatement) && !t.isExpressionStatement(blockStatement)
           || blockStatement.body && blockStatement.body.length <= LIMIT_LINE) {
