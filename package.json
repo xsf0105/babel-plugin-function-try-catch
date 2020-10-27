@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-function-try-catch",
-  "version": "1.0.10",
+  "version": "1.0.2",
   "description": "A babel plugin for funtion to use try/catch automatically",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.11.6",
-    "@babel/parser": "^7.11.5"
+    "@babel/parser": "^7.11.5",
+    "babel-traverse": "^6.26.0"
   }
 }
