@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-function-try-catch",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a babel plugin can add try/catch to function automatically.",
   "repository": "allan2coder/babel-plugin-function-try-catch",
   "author": "xsf <allan91coder@gmail.com>",
