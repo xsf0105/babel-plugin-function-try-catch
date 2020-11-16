@@ -26,8 +26,8 @@ var fn = function () {
   try {
     console.log(2);
   } catch (error) {
-    console.log(error);
     // you can do some stuff here, for example, report this error with monitor sdk.
+    console.log(error);
   }
 };
 ```
